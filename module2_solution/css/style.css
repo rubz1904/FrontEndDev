@@ -23,8 +23,7 @@ h1 {
     text-align: center;
     width: 33.33%;
     position: relative;
-    float: right;
-    clear: both;
+    left: 66.67%;
     margin-bottom: 0px;
     background-color: greenyellow;
 }
@@ -33,32 +32,20 @@ h1 {
     background-color: greenyellow;
     color: #000000;
 }
+
 #title_two {
     background-color: darkgray;
     color: #FFFFFF;
 }
+
 #title_three {
     background-color: purple;
     color: #FFFFFF;
 }
+
 p {
-    /* float: left; */
-    /* position: relative; */
-    /* margin-top: 20px; */
-    clear: both;
-
-    /* top: 5px; */
-    /* border: 1px solid black;
-    
-    width: 90%;
-    height: 150px;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: Helvetica;
-    color: white; */
+    margin: 10px;
 }
-
-/* Simple Responsive Framework. */
 
 .row {
     width: 100%;
