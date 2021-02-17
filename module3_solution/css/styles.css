@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    background-color: #fff;
+}
+
+/** HEADER **/
+#header-nav {
+    border-radius: 0;
+    border: 0;
+    
+}
+
+#nav-list{
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+}
+
+.content{
+    background-color: grey;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.text_content{
+    margin: 5px;
+}
+
+#navbar-brand{
+    color: black;
+}
+
+#container-fluid-nav{
+    background-color: grey;
+}
+
+#nav-list{
+    background-color: lightgray;
+}
+
+.nav>li>a:link, .nav>li>a:visited, .nav>li>a:hover, .nav>li>a:active {
+    color: black;
+}
