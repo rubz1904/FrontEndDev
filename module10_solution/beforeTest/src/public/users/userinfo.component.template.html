@@ -1,0 +1,10 @@
+<div ng-show="$ctrl.user">
+    First Name: {{$ctrl.user.firstname}} <br>
+    Last Name: {{$ctrl.user.lastname}} <br>
+    Email: {{$ctrl.user.email}} <br>
+    Phone: {{$ctrl.user.phone}} <br>
+    Favorite Dish Short Name: {{$ctrl.user.shortname}}
+</div>
+<div ng-hide="$ctrl.user">
+    Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a>
+</div>

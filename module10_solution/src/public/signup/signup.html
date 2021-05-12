@@ -1,0 +1,54 @@
+<h1>Simple Form Validation</h1>
+
+    <fieldset>
+      <legend>Registration</legend>
+      <form name='regForm' novalidate>
+
+        <input type="text" name="firstname" placeholder="First Name"
+          ng-model="reg.user.firstname"
+          required style="color:black">
+          <span
+            ng-if="regForm.firstname.$error.required && regForm.firstname.$touched">
+            You must enter first name.
+          </span>
+          <br>
+
+          <input type="text" name="lastname" placeholder="Last Name"
+          ng-model="reg.user.lastname"
+          required style="color:black">
+          <span
+            ng-if="regForm.lastname.$error.required && regForm.lastname.$touched">
+            You must enter last name.
+          </span>
+          <br>
+
+        <input type="email" name="email" placeholder="Email"
+          ng-model="reg.user.email"
+          required style="color:black">
+          <span ng-if="regForm.email.$invalid && regForm.email.$touched">
+            Must be a valid email address: handle@domain format
+          </span>
+          <br>
+
+        <input type="text" name="phone" placeholder="Phone ###-###-####"
+          ng-model="reg.user.phone"
+          required
+          pattern="(\d{3})-(\d{3})-(\d{4})" style="color:black">
+          <span ng-if="regForm.phone.$invalid && regForm.phone.$touched">
+            Phone must be in the format ###-###-####.
+          </span>
+          <br> 
+          <input type="text" name="shortname" placeholder="Short Name Favorite Dish Menu Item"
+          ng-model="reg.user.shortname" ng-blur="reg.validateshortname()" style="color:black">
+          <span ng-if="reg.invalidshortname">
+            No such menu number exists.
+          </span>
+          <br>
+        <button
+          ng-disabled="regForm.$invalid"
+          ng-click="reg.submit()">Submit</button>
+          <span ng-show="reg.registrationcomplete">
+            Your information has been saved.
+          </span>
+      </form>
+    </fieldset>
